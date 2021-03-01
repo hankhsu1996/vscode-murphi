@@ -1,0 +1,35 @@
+{
+    "name": "murphi",
+    "displayName": "Murphi",
+    "description": "Murphi support for VS code",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.53.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "murphi",
+                "aliases": [
+                    "Murphi",
+                    "murphi"
+                ],
+                "extensions": [
+                    ".m"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "murphi",
+                "scopeName": "source.murphi",
+                "path": "./syntaxes/murphi.tmLanguage.json"
+            }
+        ]
+    },
+    "publisher": "hankhsu1996"
+}

@@ -1,0 +1,108 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Murphi",
+    "scopeName": "source.murphi",
+    "foldingStartMarker": "begin",
+    "foldingStopMarker": "end",
+    "patterns": [
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#function"
+        },
+        {
+            "include": "#control-keywords"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#numeric"
+        },
+        {
+            "include": "#operators"
+        }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "begin": "--",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.comment.murphi"
+                        }
+                    },
+                    "end": "\\n",
+                    "name": "comment.line.double-dash.murphi"
+                },
+                {
+                    "begin": "/\\*",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.comment.murphi"
+                        }
+                    },
+                    "end": "\\*/",
+                    "name": "comment.block.murphi"
+                }
+            ]
+        },
+        "function": {
+            "name": "meta.function.murphi",
+            "match": "\\b(?i:(function|procedure|constructor|destructor|property|read|write))\\b\\s+(\\w+(\\.\\w+)?)",
+            "captures": {
+                "1": {
+                    "name": "storage.type.function.murphi"
+                },
+                "2": {
+                    "name": "entity.name.function.murphi"
+                }
+            }
+        },
+        "control-keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.murphi",
+                    "match": "(?i)\\b(begin|end|if|then|elsif|else|endif|switch|case|endswitch|for|do|endfor|to|by|while|endwhile|alias|endalias|clear|error|assert|put|return|record|endrecord|array|of|enum|union|forall|endforall|rule|ruleset|endrule|endruleset|choose|endchoose|undefine|startstate|endstartstate)\\b"
+                }
+            ]
+        },
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.murphi",
+                    "match": "(?i)\\b(boolean|const|exists|function|invariant|program|type|endfunction|false|var|endexists|in|procedure|traceuntil|endprocedure|interleaved|process|true)\\b"
+                }
+            ]
+        },
+        "strings": {
+            "name": "string.quoted.double.murphi",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.murphi",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        "numeric": {
+            "name": "constant.numeric.murphi",
+            "patterns": [
+                {
+                    "name": "constant.numeric.murphi",
+                    "match": "\\b(\\d+)|(\\d*\\.\\d+([eE][\\-+]?\\d+)?)\\b"
+                },
+                {
+                    "name": "constant.numeric.hex.murphi",
+                    "match": "\\$[0-9a-fA-F]{1,16}\\b"
+                }
+            ]
+        }
+    }
+}
