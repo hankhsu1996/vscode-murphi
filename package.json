@@ -1,13 +1,19 @@
 {
     "name": "murphi",
-    "displayName": "Murphi",
     "description": "Murphi support for VS code",
     "version": "1.0.0",
+    "publisher": "hankhsu1996",
     "engines": {
         "vscode": "^1.53.0"
     },
+    "license": "MIT",
+    "displayName": "Murphi",
     "categories": [
         "Programming Languages"
+    ],
+    "keywords": [
+        "Murphi",
+        "murphi"
     ],
     "contributes": {
         "languages": [
@@ -31,5 +37,5 @@
             }
         ]
     },
-    "publisher": "hankhsu1996"
+    "icon": "images/icon.png"
 }
