@@ -1,7 +1,7 @@
 {
 	"name": "murphi",
 	"description": "Murphi support for VS code",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"publisher": "hankhsu1996",
 	"engines": {
 		"vscode": "^1.53.0"
