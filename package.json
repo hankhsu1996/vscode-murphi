@@ -9,7 +9,8 @@
 	"license": "MIT",
 	"displayName": "Murphi",
 	"categories": [
-		"Programming Languages"
+		"Programming Languages",
+		"Snippets"
 	],
 	"keywords": [
 		"Murphi",
@@ -38,6 +39,12 @@
 				"language": "murphi",
 				"scopeName": "source.murphi",
 				"path": "./syntaxes/murphi.tmLanguage.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "murphi",
+				"path": "./snippets/murphi.json"
 			}
 		]
 	},
