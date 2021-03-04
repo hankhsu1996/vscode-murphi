@@ -17,7 +17,11 @@ Calling out known issues can help limit users opening duplicate issues against y
 
 ### New Feature
 
--   Syntax highlighting for Murphi language
+-   Syntax highlighting for type. Triggered by explicitly specifying the type identifier as `typename_t`.
+-   Syntax highlighting for function call.
+
+### 1.1.0
+Add more highlighting features.
 
 ### 1.0.0
 

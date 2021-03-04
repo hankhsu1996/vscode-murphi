@@ -28,6 +28,15 @@
         },
         {
             "include": "#types"
+        },
+        {
+            "name": "meta.function-call.murphi",
+            "match": "(?![0-9])\\b([0-9a-zA-Z_]+)\\([^\\)]*\\)(\\.[^\\)]*\\))?",
+            "captures": {
+                "1": {
+                    "name": "entity.name.function.murphi"
+                }
+            }
         }
     ],
     "repository": {
