@@ -11,13 +11,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+-   Syntax highlighting for type
 -   Syntax highlighting for function call
 
-## [1.0.1] - 2021-03-04
-
-### Added
-
--   Syntax highlighting for type
 
 ## [1.0.0] - 2021-03-01
 

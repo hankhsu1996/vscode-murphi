@@ -16,7 +16,7 @@ Calling out known issues can help limit users opening duplicate issues against y
 
 ## Release Notes
 
-### New Feature
+### New Features
 
 -   Syntax highlighting for type. Triggered by explicitly specifying the type identifier as `typename_t`.
 -   Syntax highlighting for function call.
