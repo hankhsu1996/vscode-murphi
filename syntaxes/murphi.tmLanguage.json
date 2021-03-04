@@ -9,7 +9,7 @@
             "include": "#comments"
         },
         {
-            "include": "#function"
+            "include": "#functions"
         },
         {
             "include": "#control-keywords"
@@ -21,10 +21,13 @@
             "include": "#strings"
         },
         {
-            "include": "#numeric"
+            "include": "#numerics"
         },
         {
             "include": "#operators"
+        },
+        {
+            "include": "#types"
         }
     ],
     "repository": {
@@ -52,7 +55,7 @@
                 }
             ]
         },
-        "function": {
+        "functions": {
             "name": "meta.function.murphi",
             "match": "\\b(?i:(function|procedure|constructor|destructor|property|read|write))\\b\\s+(\\w+(\\.\\w+)?)",
             "captures": {
@@ -68,7 +71,11 @@
             "patterns": [
                 {
                     "name": "keyword.control.murphi",
-                    "match": "(?i)\\b(begin|end|if|then|elsif|else|endif|switch|case|endswitch|for|do|endfor|to|by|while|endwhile|alias|endalias|clear|error|assert|put|return|record|endrecord|array|of|enum|union|forall|endforall|rule|ruleset|endrule|endruleset|choose|endchoose|undefine|startstate|endstartstate)\\b"
+                    "match": "(?i)\\b(begin|end|if|then|elsif|else|endif|switch|case|endswitch|for|do|endfor|to|by|while|endwhile|alias|endalias|clear|error|assert|put|return|record|endrecord|array|of|enum|union|forall|endforall|rule|ruleset|endrule|endruleset|choose|endchoose|undefine|startstate|endstartstate|invariant)\\b"
+                },
+                {
+                    "name": "keyword.control.murphi",
+                    "match": "==>"
                 }
             ]
         },
@@ -76,7 +83,7 @@
             "patterns": [
                 {
                     "name": "keyword.murphi",
-                    "match": "(?i)\\b(boolean|const|exists|function|invariant|program|type|endfunction|false|var|endexists|in|procedure|traceuntil|endprocedure|interleaved|process|true)\\b"
+                    "match": "(?i)\\b(true|false|const|exists|function|program|type|endfunction|var|endexists|in|procedure|traceuntil|endprocedure|interleaved|process)\\b"
                 }
             ]
         },
@@ -91,7 +98,7 @@
                 }
             ]
         },
-        "numeric": {
+        "numerics": {
             "name": "constant.numeric.murphi",
             "patterns": [
                 {
@@ -103,6 +110,10 @@
                     "match": "\\$[0-9a-fA-F]{1,16}\\b"
                 }
             ]
+        },
+        "types":{
+            "name": "support.type.murphi",
+            "match": "\\b([a-z0-9_]+_t)|boolean\\b"
         }
     }
 }

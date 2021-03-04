@@ -6,7 +6,7 @@ This is the Murphi language support for VS code. Currently, the extension only s
 
 ### Syntax Highlighting
 
-![Syntax Highlighting](images/syntax_highlighting.gif)
+![Syntax Highlighting](https://github.com/hankhsu1996/murphi/raw/main/images/syntax_highlighting.gif)
 
 <!--
 ## Known Issues

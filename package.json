@@ -1,41 +1,50 @@
 {
-    "name": "murphi",
-    "description": "Murphi support for VS code",
-    "version": "1.0.0",
-    "publisher": "hankhsu1996",
-    "engines": {
-        "vscode": "^1.53.0"
-    },
-    "license": "MIT",
-    "displayName": "Murphi",
-    "categories": [
-        "Programming Languages"
-    ],
-    "keywords": [
-        "Murphi",
-        "murphi"
-    ],
-    "contributes": {
-        "languages": [
-            {
-                "id": "murphi",
-                "aliases": [
-                    "Murphi",
-                    "murphi"
-                ],
-                "extensions": [
-                    ".m"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "murphi",
-                "scopeName": "source.murphi",
-                "path": "./syntaxes/murphi.tmLanguage.json"
-            }
-        ]
-    },
-    "icon": "images/icon.png"
+	"name": "murphi",
+	"description": "Murphi support for VS code",
+	"version": "1.0.0",
+	"publisher": "hankhsu1996",
+	"engines": {
+		"vscode": "^1.53.0"
+	},
+	"license": "MIT",
+	"displayName": "Murphi",
+	"categories": [
+		"Programming Languages"
+	],
+	"keywords": [
+		"Murphi",
+		"murphi"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hankhsu1996/murphi"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "murphi",
+				"aliases": [
+					"Murphi",
+					"murphi"
+				],
+				"extensions": [
+					".m"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "murphi",
+				"scopeName": "source.murphi",
+				"path": "./syntaxes/murphi.tmLanguage.json"
+			}
+		]
+	},
+	"icon": "images/icon.png",
+	"__metadata": {
+		"id": "5ba1f2c6-7053-400a-b180-c568f69a26bf",
+		"publisherDisplayName": "hankhsu1996",
+		"publisherId": "31338f55-19f5-4bde-b3b3-7f984c67d2b4"
+	}
 }
