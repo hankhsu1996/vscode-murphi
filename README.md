@@ -1,6 +1,6 @@
 # Murphi
 
-This is the Murphi language support for VS code. Currently, the extension only supports syntax highlighting.
+This is the Murphi language support for VS code.
 
 ## Features
 
@@ -8,6 +8,7 @@ This is the Murphi language support for VS code. Currently, the extension only s
 
 <img src="https://github.com/hankhsu1996/murphi/raw/main/images/syntax_highlighting.gif" width="800">
 
+### Snippets
 
 <!--
 ## Known Issues
@@ -20,6 +21,9 @@ Calling out known issues can help limit users opening duplicate issues against y
 
 -   Syntax highlighting for type. Triggered by explicitly specifying the type identifier as `typename_t`.
 -   Syntax highlighting for function call.
+
+### 2.0.0
+Add snippet support.
 
 ### 1.1.0
 Add more highlighting features.

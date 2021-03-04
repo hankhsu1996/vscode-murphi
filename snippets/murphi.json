@@ -1,0 +1,176 @@
+{
+    "enumerator": {
+        "prefix": "enum",
+        "body": [
+            "enum {",
+            "\t${1}",
+            "};"
+        ],
+        "description": "Enumerator."
+    },
+    "union": {
+        "prefix": "union",
+        "body": [
+            "union {",
+            "\t${1}",
+            "};"
+        ],
+        "description": "Union."
+    },
+    "record": {
+        "prefix": "record",
+        "body": [
+            "record",
+            "\t${1}",
+            "end;"
+        ],
+        "description": "Lower case record."
+    },
+    "Record": {
+        "prefix": "Record",
+        "body": [
+            "Record",
+            "\t${1}",
+            "End;"
+        ],
+        "description": "Capitalized record."
+    },
+    "array": {
+        "prefix": "array",
+        "body": [
+            "array [${1:typeExpr}] of ${2:typeExpr}"
+        ],
+        "description": "Lower case array."
+    },
+    "Array": {
+        "prefix": "Array",
+        "body": [
+            "Array [${1:typeExpr}] of ${2:typeExpr}"
+        ],
+        "description": "Capitalized array."
+    },
+    "begin-end": {
+        "prefix": "begin",
+        "body": [
+            "begin",
+            "\t${1}",
+            "end;"
+        ],
+        "description": "Lower case begin-end."
+    },
+    "Begin-End": {
+        "prefix": "Begin",
+        "body": [
+            "Begin",
+            "\t${1}",
+            "End;"
+        ],
+        "description": "Capitalized begin-end."
+    },
+    "assert": {
+        "prefix": "assert",
+        "body": [
+            "assert (${1:expr}) \"${2:string}\";"
+        ],
+        "description": "Lower case assert."
+    },
+    "Assert": {
+        "prefix": "Assert",
+        "body": [
+            "Assert (${1:expr}) \"${2:string}\";"
+        ],
+        "description": "Capitalized assert."
+    },
+    "error": {
+        "prefix": "error",
+        "body": [
+            "error \"${1:string}\";"
+        ],
+        "description": "Lower case error."
+    },
+    "Error": {
+        "prefix": "Error",
+        "body": [
+            "Error \"${1:string}\";"
+        ],
+        "description": "Capitalized error."
+    },
+    "ruleset": {
+        "prefix": "ruleset",
+        "body": [
+            "ruleset ${1:quantifier} do",
+            "\t${2}",
+            "endruleset;"
+        ],
+        "description": "Lower case ruleset."
+    },
+    "Ruleset": {
+        "prefix": "Ruleset",
+        "body": [
+            "Ruleset ${1:quantifier} Do",
+            "\t${2}",
+            "Endruleset;"
+        ],
+        "description": "Capitalized ruleset."
+    },
+    "alias": {
+        "prefix": "alias",
+        "body": [
+            "alias ${1:aliases} do",
+            "\t${2}",
+            "endalias;"
+        ],
+        "description": "Lower case alias."
+    },
+    "Alias": {
+        "prefix": "Alias",
+        "body": [
+            "Alias ${1:aliases} Do",
+            "\t${2}",
+            "Endalias;"
+        ],
+        "description": "Capitalized alias."
+    },
+    "simplerule": {
+        "prefix": "rule",
+        "body": [
+            "rule \"${1:string}\"",
+            "\t${2:expr}",
+            "==>",
+            "begin",
+            "\t${3}",
+            "end;"
+        ],
+        "description": "Lower case simplerule."
+    },
+    "Simplerule": {
+        "prefix": "Rule",
+        "body": [
+            "Rule \"${1:string}\"",
+            "\t${2:expr}",
+            "==>",
+            "Begin",
+            "\t${3}",
+            "End;"
+        ],
+        "description": "Capitalized simplerule."
+    },
+    "forall": {
+        "prefix": "forall",
+        "body": [
+            "forall ${1:quantifier} do",
+            "\t${2}",
+            "end;"
+        ],
+        "description": "Lower case forall."
+    },
+    "Forall": {
+        "prefix": "Forall",
+        "body": [
+            "Forall ${1:quantifier} Do",
+            "\t${2}",
+            "End;"
+        ],
+        "description": "Capitalized forall."
+    }
+}
