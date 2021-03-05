@@ -67,6 +67,24 @@
         ],
         "description": "Capitalized begin-end."
     },
+    "do-end": {
+        "prefix": "do",
+        "body": [
+            "do",
+            "\t${1}",
+            "end;"
+        ],
+        "description": "Lower case do-end."
+    },
+    "Do-End": {
+        "prefix": "Do",
+        "body": [
+            "Do",
+            "\t${1}",
+            "End;"
+        ],
+        "description": "Capitalized do-end."
+    },
     "assert": {
         "prefix": "assert",
         "body": [
