@@ -172,5 +172,23 @@
             "End;"
         ],
         "description": "Capitalized forall."
+    },
+    "for": {
+        "prefix": "for",
+        "body": [
+            "for ${1:quantifier} do",
+            "\t${2}",
+            "end;"
+        ],
+        "description": "Lower case for."
+    },
+    "For": {
+        "prefix": "For",
+        "body": [
+            "For ${1:quantifier} Do",
+            "\t${2}",
+            "End;"
+        ],
+        "description": "Capitalized for."
     }
 }
