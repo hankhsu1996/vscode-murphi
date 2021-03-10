@@ -80,7 +80,7 @@
             "patterns": [
                 {
                     "name": "keyword.murphi",
-                    "match": "(?i)\\b(true|false|const|exists|function|program|type|endfunction|var|endexists|in|procedure|traceuntil|endprocedure|interleaved|process)\\b"
+                    "match": "(?i)\\b(true|false|undefined|const|exists|function|program|type|endfunction|var|endexists|in|procedure|traceuntil|endprocedure|interleaved|process)\\b"
                 }
             ]
         },
