@@ -9,9 +9,6 @@
             "include": "#comments"
         },
         {
-            "include": "#functions"
-        },
-        {
             "include": "#control-keywords"
         },
         {
@@ -30,8 +27,11 @@
             "include": "#types"
         },
         {
+            "include": "#functions"
+        },
+        {
             "name": "meta.function-call.murphi",
-            "match": "(?![0-9])\\b([0-9a-zA-Z_]+)\\([^\\)]*\\)(\\.[^\\)]*\\))?",
+            "match": "\\b(\\w+)(?=\\s*\\()",
             "captures": {
                 "1": {
                     "name": "entity.name.function.murphi"
@@ -63,18 +63,6 @@
                     "name": "comment.block.murphi"
                 }
             ]
-        },
-        "functions": {
-            "name": "meta.function.murphi",
-            "match": "\\b(?i:(function|procedure|constructor|destructor|property|read|write))\\b\\s+(\\w+(\\.\\w+)?)",
-            "captures": {
-                "1": {
-                    "name": "storage.type.function.murphi"
-                },
-                "2": {
-                    "name": "entity.name.function.murphi"
-                }
-            }
         },
         "control-keywords": {
             "patterns": [
@@ -122,7 +110,19 @@
         },
         "types":{
             "name": "support.type.murphi",
-            "match": "\\b([a-z0-9_]+_t)|boolean\\b"
+            "match": "\\b([a-z0-9_]+_[tne])|boolean\\b"
+        },
+        "functions": {
+            "name": "meta.function.murphi",
+            "match": "\\b(?i:(function|procedure|constructor|destructor|property|read|write))\\b\\s+(\\w+(\\.\\w+)?)",
+            "captures": {
+                "1": {
+                    "name": "storage.type.function.murphi"
+                },
+                "2": {
+                    "name": "entity.name.function.murphi"
+                }
+            }
         }
     }
 }

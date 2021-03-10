@@ -44,7 +44,11 @@
 		"snippets": [
 			{
 				"language": "murphi",
-				"path": "./snippets/murphi.json"
+				"path": "./snippets/capital.murphi.json"
+			},
+			{
+				"language": "murphi",
+				"path": "./snippets/lowercase.murphi.json"
 			}
 		]
 	},

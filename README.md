@@ -5,6 +5,7 @@ This is the Murphi language support for VS code.
 ## Features
 
 ### Syntax Highlighting
+* Use `<typename>_t` (struct), `<typename>_e` (enum), `<typename>_n` (range) to explicitly designate a type.
 
 <img src="https://github.com/hankhsu1996/murphi/raw/main/images/syntax_highlighting.gif" width="800">
 

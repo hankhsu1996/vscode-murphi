@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [2.1.1] - 2021-03-10
+### Added
+- Snippet for `invariant`.
+### Changed
+-   Use `<typename>_t` (struct), `<typename>_e` (enum), `<typename>_n` (range) to explicitly designate a type.
+### Fixed
+-   Bug: keyword in function parameter list is not highlighted.
+
 ## [2.1.0] - 2021-03-05
 ### Added
 -   Snippets for for-loop and do-end.

@@ -1,30 +1,21 @@
 {
-    "enumerator": {
-        "prefix": "enum",
+    "Enumerator": {
+        "prefix": "Enum",
         "body": [
-            "enum {",
+            "Enum {",
             "\t${1}",
             "};"
         ],
         "description": "Enumerator."
     },
-    "union": {
-        "prefix": "union",
+    "Union": {
+        "prefix": "Union",
         "body": [
-            "union {",
+            "Union {",
             "\t${1}",
             "};"
         ],
         "description": "Union."
-    },
-    "record": {
-        "prefix": "record",
-        "body": [
-            "record",
-            "\t${1}",
-            "end;"
-        ],
-        "description": "Lower case record."
     },
     "Record": {
         "prefix": "Record",
@@ -35,28 +26,12 @@
         ],
         "description": "Capitalized record."
     },
-    "array": {
-        "prefix": "array",
-        "body": [
-            "array [${1:typeExpr}] of ${2:typeExpr}"
-        ],
-        "description": "Lower case array."
-    },
     "Array": {
         "prefix": "Array",
         "body": [
             "Array [${1:typeExpr}] of ${2:typeExpr}"
         ],
         "description": "Capitalized array."
-    },
-    "begin-end": {
-        "prefix": "begin",
-        "body": [
-            "begin",
-            "\t${1}",
-            "end;"
-        ],
-        "description": "Lower case begin-end."
     },
     "Begin-End": {
         "prefix": "Begin",
@@ -67,15 +42,6 @@
         ],
         "description": "Capitalized begin-end."
     },
-    "do-end": {
-        "prefix": "do",
-        "body": [
-            "do",
-            "\t${1}",
-            "end;"
-        ],
-        "description": "Lower case do-end."
-    },
     "Do-End": {
         "prefix": "Do",
         "body": [
@@ -85,13 +51,6 @@
         ],
         "description": "Capitalized do-end."
     },
-    "assert": {
-        "prefix": "assert",
-        "body": [
-            "assert (${1:expr}) \"${2:string}\";"
-        ],
-        "description": "Lower case assert."
-    },
     "Assert": {
         "prefix": "Assert",
         "body": [
@@ -99,28 +58,12 @@
         ],
         "description": "Capitalized assert."
     },
-    "error": {
-        "prefix": "error",
-        "body": [
-            "error \"${1:string}\";"
-        ],
-        "description": "Lower case error."
-    },
     "Error": {
         "prefix": "Error",
         "body": [
             "Error \"${1:string}\";"
         ],
         "description": "Capitalized error."
-    },
-    "ruleset": {
-        "prefix": "ruleset",
-        "body": [
-            "ruleset ${1:quantifier} do",
-            "\t${2}",
-            "endruleset;"
-        ],
-        "description": "Lower case ruleset."
     },
     "Ruleset": {
         "prefix": "Ruleset",
@@ -131,15 +74,6 @@
         ],
         "description": "Capitalized ruleset."
     },
-    "alias": {
-        "prefix": "alias",
-        "body": [
-            "alias ${1:aliases} do",
-            "\t${2}",
-            "endalias;"
-        ],
-        "description": "Lower case alias."
-    },
     "Alias": {
         "prefix": "Alias",
         "body": [
@@ -148,18 +82,6 @@
             "Endalias;"
         ],
         "description": "Capitalized alias."
-    },
-    "simplerule": {
-        "prefix": "rule",
-        "body": [
-            "rule \"${1:string}\"",
-            "\t${2:expr}",
-            "==>",
-            "begin",
-            "\t${3}",
-            "end;"
-        ],
-        "description": "Lower case simplerule."
     },
     "Simplerule": {
         "prefix": "Rule",
@@ -173,15 +95,6 @@
         ],
         "description": "Capitalized simplerule."
     },
-    "forall": {
-        "prefix": "forall",
-        "body": [
-            "forall ${1:quantifier} do",
-            "\t${2}",
-            "end;"
-        ],
-        "description": "Lower case forall."
-    },
     "Forall": {
         "prefix": "Forall",
         "body": [
@@ -191,15 +104,6 @@
         ],
         "description": "Capitalized forall."
     },
-    "for": {
-        "prefix": "for",
-        "body": [
-            "for ${1:quantifier} do",
-            "\t${2}",
-            "end;"
-        ],
-        "description": "Lower case for."
-    },
     "For": {
         "prefix": "For",
         "body": [
@@ -208,5 +112,12 @@
             "End;"
         ],
         "description": "Capitalized for."
+    },
+    "Invariant": {
+        "prefix": "Invariant",
+        "body": [
+            "Invariant \"${1:string}\"",
+            "\t${2}"
+        ]
     }
 }
