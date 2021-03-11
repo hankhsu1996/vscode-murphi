@@ -109,8 +109,16 @@
             ]
         },
         "types":{
-            "name": "support.type.murphi",
-            "match": "\\b([a-z0-9_]+_[tne])|boolean\\b"
+            "patterns": [
+                {
+                    "name": "support.type.murphi",
+                    "match": "\\b([a-z0-9_]+_[tne])\\b"
+                },
+                {
+                    "name": "support.type.murphi",
+                    "match": "(?i)\\b(boolean)\\b"
+                }
+            ]
         },
         "functions": {
             "name": "meta.function.murphi",

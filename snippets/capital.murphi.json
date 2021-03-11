@@ -119,5 +119,16 @@
             "Invariant \"${1:string}\"",
             "\t${2}"
         ]
+    },
+    "Switch": {
+        "prefix": "Switch",
+        "body": [
+            "Switch ${1:expression}",
+            "\tCase ${2:expression}:",
+            "\t\t${3:statement}",
+            "\tElse",
+            "\t\t${4:statement}",
+            "Endswitch;"
+        ]
     }
 }

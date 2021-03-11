@@ -38,9 +38,5 @@
         ["(", ")"],
         ["\"", "\""],
         ["'", "'"]
-    ],
-    "indentationRules": {
-        "increaseIndentPattern": "^.*\\s(begin|Begin|BEGIN|do|Do|DO|then|Then|THEN|else|Else|ELSE|record|Record|RECORD)\\s*$",
-        "decreaseIndentPattern": "^.*\\s(end|End|END|endswitch|Endswitch|ENDSWITCH|endfor|Endfor|ENDFOR|endwhile|Endwhile|ENDWHILE|endalias|Endalias|ENDALIAS|endrecord|Endrecord|ENDRECORD|endforall|Endforall|ENDFORALL|endrule|Endrule|ENDRULE|endruleset|Endruleset|ENDRULESET|endchoose|Endchoose|ENDCHOOSE|endstartstate|Endstartstate|ENDSTARTSTATE)\\s*$"
-    }
+    ]
 }

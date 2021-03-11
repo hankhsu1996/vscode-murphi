@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [2.1.3] - 2021-03-11
+### Added
+- Snippet for `switch`.
+### Changed
+- Remove auto-indent rules.
+### Fixed
+- Capitalized `Boolean` is not highlighted.
+- Variable is wrongly highlighted if it includes pattern of a type.
+
 ## [2.1.2] - 2021-03-10
 ### Added
 - Syntax highlighting for `undefined`.
