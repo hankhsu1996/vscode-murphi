@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [2.1.4] - 2021-03-18
+### Added
+- Snippet for `if`.
+
 ## [2.1.3] - 2021-03-11
 ### Added
 - Snippet for `switch`.

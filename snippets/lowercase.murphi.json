@@ -130,5 +130,23 @@
             "\t\t${4:statement}",
             "endswitch;"
         ]
+    },
+    "if": {
+        "prefix": "if",
+        "body": [
+            "if ${1:expression} then",
+            "\t${2:statement}",
+            "endif;"
+        ]
+    },
+    "ifelse": {
+        "prefix": "ifelse",
+        "body": [
+            "if ${1:expression} then",
+            "\t${2:statement}",
+            "else",
+            "\t${3:statement}",
+            "endif;"
+        ]
     }
 }

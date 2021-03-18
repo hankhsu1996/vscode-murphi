@@ -32,18 +32,12 @@ Calling out known issues can help limit users opening duplicate issues against y
 
 ### New Features
 
--   Syntax highlighting for type. Triggered by explicitly specifying the type identifier as `typename_t`.
--   Syntax highlighting for function call.
-
-
-### 2.1.0
-Add snippet for for-loop and do-end block.
+- Snippet for `if`.
+- Snippet for `switch`.
+- Snippet for `invariant`.
 
 ### 2.0.0
 Add snippet support.
 
-### 1.1.0
-Add more highlighting features.
-
 ### 1.0.0
-Initial release of Murphi.
+Initial release of Murphi language extension, which supports syntex highlighting for Murphi.
